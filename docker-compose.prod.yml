@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  api:
+    build: ./api
+    ports:
+      - 3004:3333
+    volumes:
+      - ./api/src:/src
+    external_links:
+      - db_mariadb_1:mariadb
+    networks:
+      - default
+      - db_db_primary
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - /app/node_modules
+      - ./frontend/src:/app
+    ports:
+      #- 5010:5000
+      - 3000:3000
+
+networks:
+  db_db_primary:
+    external: true

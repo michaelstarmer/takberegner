@@ -1,0 +1,20 @@
+.stepBtn {
+  background-color: #127fc4;
+  padding: 1rem 1.5rem;
+  color: #f9f9f9;
+  margin-right: 1rem;
+  display: inline-block;
+  text-align: center;
+  &--fixed-width {
+    width: 15rem;
+  }
+  &:last-child {
+    margin-right: 0rem;
+  }
+  &:hover {
+    background-color: #0065bf;
+    color: #f9f9f9;
+    box-shadow: 1px 1px 3px #888;
+    text-decoration: none;
+  }
+}

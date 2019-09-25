@@ -1,0 +1,19 @@
+.measurement-container {
+  min-height: 25rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  .equal-height-col {
+    height: 100%;
+  }
+  .input-section {
+    min-height: 35rem;
+    width: 100%;
+  }
+}
+
+.btnrow {
+  text-align: right;
+  width: 100%;
+}
+

@@ -1,0 +1,12 @@
+.contact-form form {
+  min-height: 25rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+input[type=number]::-webkit-inner-spin-button.no-spin-btns {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
